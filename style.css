@@ -1,0 +1,55 @@
+h1{
+    text-align: center;
+}
+.div1{
+    width: 450px;
+    height: 820px;
+    background-color: rgb(35, 224, 130);
+    border-radius: 10px;
+    margin: 0px 400px;
+    
+}
+div form label{
+    margin-left: 30px;
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#label{
+    margin-left: 30px;
+    width: 370px;
+    height: 30px;
+}
+#date {
+    margin-left: 30px;
+    width: 370px;
+    height: 30px;
+    font-size: large;
+}
+div form p {
+    margin-left: 30px;
+    color: rgb(245, 8, 8);
+
+}
+div form select {
+    margin-left: 30px;
+    width: 370px;
+    height: 30px;
+}
+div form button {
+    margin-left: 30px;
+    width: 370px;
+    height: 30px;
+    background-color: rgb(255, 1, 1);
+    font-size: x-large;
+    color: aliceblue;
+}
+#msg{
+    margin-left: 30px;
+    width: 370px;
+    height: 80px;
+}
+#ch{
+    margin-left: 30;
+
+}
