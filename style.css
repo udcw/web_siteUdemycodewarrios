@@ -46,6 +46,7 @@ div form button {
     background-color: rgb(255, 1, 1);
     font-size: x-large;
     color: aliceblue;
+    cursor: pointer;
 }
 #msg{
     margin-left: 30px;
