@@ -1,0 +1,160 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+/* Menu de navigation */
+  header{
+    padding: 0 5px;
+    background-color: #ffffff;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    
+  }
+  
+  .navbar .logo a img {
+    width: 100px;
+  }
+  
+  .nav-links,
+  .nav-link {
+    list-style: none;
+    display: flex;
+    margin: 0;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+
+  .nav-links a {
+    color: rgb(54, 51, 51);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+  .nav-link a{
+    background-color: #0000ff;
+    border-radius: 4px;
+    color: #fff;
+  }
+
+  .nav-links a:hover {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    color: #0000ff;
+  }
+  
+  /* Menu hamburger */
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .menu-toggle .bar {
+    background-color: #333;
+    width: 25px;
+    height: 4px;
+    margin: 4px 0;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      position: absolute;
+      top: 100px;
+      right: 0;
+      background-color: #333;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      display: none;
+    }
+
+    .nav-links a{
+      color: #fff;
+    }
+  
+    .nav-links li{
+      margin: 15px 0;
+    }
+    
+    .nav-link li {
+      margin: 15px;
+    }
+  
+    .nav-links.active {
+      display: flex;
+      transition: all 2s ease;
+    }
+  
+    .menu-toggle {
+      display: flex;
+    }
+  }
+
+  
+  .container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  /*slide banner*/
+  .main{
+    height: 60vh;
+    width: 100%;
+  }
+  .wrapper,
+  .slide{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  .slide::before{
+    content: "";
+    position: absolute;
+    height: 60vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0,0.4);
+    z-index: 10;
+  }
+  .slide .image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .slide .image-date{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 100;
+  }
+  .image-date span.text{
+    font-size: 20px;
+    font-weight: 400px;
+    color: #fff;
+    
+  }
+
+  /*salutation*/
+  .salutation{
+    position: absolute;
+    top: 75%;
+    right: 0;
+    bottom: 0;
+  }
+  .salutation .hello{
+    z-index: 100;
+    width: 180px;
+  }

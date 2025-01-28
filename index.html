@@ -1,44 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FORMULAIRE</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Responsive</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div class="div1">
-        <h1>Formulaire d'inscription</h1>
-        <form action="#">
-            <label  for="name">Nom</label><br>
-            <input type="text" id="label"><br>
-            <label for="name">Prenom</label><br>
-            <input type="text" id="label"><br>
-            <label for="name">Email</label><br>
-            <input type="text" id="label"><br>
-            <label for="name">Telephone</label><br>
-            <input type="text" id="label"><br>
-            <label for="name">Mot de passe</label><br>
-            <input type="text" id="label"><br>
-            <label for="name">Confirmez mode de passe</label><br>
-            <input type="text" id="label"><br>
-            <label for="name">Date de naissance</label><br>
-            <input type="date" id="date"><br>
-            <label for="name">Sexe</label><br>
-            <select name="sexe" id="sexe" >
-                <option value="">Selectionner</option>
-                <option value="">Homme</option>
-                <option value="">Femme</option>
-               
-            </select><br>
-            <label for="addres">Adresse</label><br>
-            <textarea name="message" id="msg"></textarea><br>
-            <p>Accepter les termes et les condition</p>
-            <input id="ch" type="checkbox"> j'accepte les termes et les conditions <br><br>
 
-            <button>S'inscrire</button>
-        </form>
-
+  <!-- Menu -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#"><img src="assets/images/logo.png" alt=""></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Cours</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">boutique</a></li>
+        <li><a href="#">Blog</a></li>
+        <div class="nav-link">
+          <li><a href="#" class="btn-con">Se connecter</a></li>
+          <li><a href="#" class="btn-ins">S'inscrire</a></li>
+        </div>
+      </ul>
+      
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+  <section class="main">
+    <div class="wrapper">
+      <div class="slide">
+        <img src="assets/images/home_banner3.jpeg" alt="" class="image">
+        <div class="image-date">
+          <span class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A dicta molestiae earum minus tempora beatae tempore quidem omnis repudiandae, reprehenderit distinctio voluptates obcaecati amet similique illum doloremque perspiciatis dolorum officiis temporibus. Dolore quia perferendis consequuntur quo molestiae ut distinctio excepturi?</span>
+          
+        </div>
+      </div>
     </div>
+  </section>
+
+
+
+ <section class="salutation">
+  <img src="assets/images/kefu.gif" alt="" class="hello">
+ </section> 
+
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
